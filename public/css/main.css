@@ -1,0 +1,19 @@
+/** @format */
+
+body {
+	background-color: pink;
+	text-align: center;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 2rem;
+	margin-bottom: 3rem;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 0 1rem;
+}
