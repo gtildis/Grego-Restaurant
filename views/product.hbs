@@ -1,0 +1,23 @@
+<h1>Pizza {{name}}</h1>
+
+{{#if price}}
+	<h2>Price: {{price}} $</h2>
+{{else}}
+	<h2> There is no such a thing </h2>
+{{/if}}
+
+{{!-- <h2>Recommended Drink: {{recommendedDrink}}</h2> --}}
+
+<div>
+	<h2>Ingredients: </h2>
+	<ul class="ingredients-list">
+		{{#each ingredients}}
+			<li>{{this}}</li>
+		{{/each}}
+	</ul>
+
+</div>
+
+<img src="/images/{{imageFile}}" alt="pizza" />
+
+{{> ctaOrderNow}}
